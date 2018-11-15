@@ -1,0 +1,81 @@
+{% set title = 'Layout' %}
+{% set navigation = 'transactional' %}
+{% set navigationWidth = 'fluid' %}
+{% extends "includes/templates/styles.html"%}
+
+{% block header %}
+    <h1>NHS login - Onboarding information for partners</h1>
+    <p style="max-width: 100%" class="nhsuk-body-s"><span class="nhsuk-tag nhsuk-tag__development">BETA</span> This information is likely to change soon.</p>
+{% endblock %}
+
+{% block sidebar %}
+    <!--<h2 class="nhsuk-heading-xs">Onboarding Information</h2>-->
+    <!--<ul class="nhsuk-list">
+        <li><a href="index">Introduction</a></li>
+        <li><a href="roadmap">Feature Roadmap</a></li>
+        <li><a href="service-overview">Service Overview</a></li>
+        <li><a href="onboarding-plan">Onboarding Plan</a></li>
+        <li><a href="login-contacts">NHS login contacts</a></li>
+        <li><a href="express-interest">Express Interest</a></li>
+        <li><a href="minimum-requirements">Minimum Requirements</a></li>
+        <li><a href="technical-overview">Technical Overview</a></li>
+        <li><a href="contracts">Contracts</a></li>
+    </ul>
+    -->
+
+    {% include "includes/side-menu.html" %}
+{% endblock %}
+
+{% block content %}
+    
+    <h2>Service Overview</h2>
+    
+    <p>The service overview contains:</p>
+    <ul>
+      <li>an explanation of the NHS login service and how it works</li>
+      <li>which customer journeys are supported by NHS login service</li>
+      <li>which customer journeys are not supported by NHS login</li>
+      <li>our minimum standards for integration into the NHS login service</li>
+    </ul>
+    <h2>The NHS login</h2>
+    <p>The NHS login is a safe and convenient single point of access to approved health websites and apps. It’s been introduced to empower patients and lower the burden on frontline NHS health professionals.</p>
+    <p>At first, it will be used to access the NHS App. The number of websites and apps that can use the NHS login with will increase over time.</p>
+    <p>The NHS login allows people to set up an online account using their email address and mobile phone. Their identity is then authenticated and verified using a trusted photo ID document such as a passport or driving licence plus a short video of themselves.</p>
+    <p>Once people have proved who they are with photo ID and video, they can use their single NHS login repeatedly without having to prove who they are each time.</p>
+    <p>It's based on the government's Identity Proofing and Verification of an Individual good practice guide. All services that use our authentication and verification platform must meet NHS Digital's standard.</p>
+    <br><iframe width="560" height="315" src="https://www.youtube.com/embed/wI-jF9zJw0c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p>Watch this short video to see how the NHS login works (embed this video https://www.youtube.com/watch?reload=9&amp;v=wI-jF9zJw0c&amp;feature=youtu.be)</p>
+
+    <h2>Which customer journeys are supported by the NHS login service</h2>
+    <p>Customer journeys currently supported by the NHS login service are:</p>
+    <ul>	
+      <li>account creation</li>
+      <li>identity verification</li>
+      <li>basic account management (changing password, email address and phone number)</li>
+    </ul>
+    <p>At the moment the service only covers customers in England and those with a British passport or UK driving license.</p>
+
+    <h2>Which customer journeys are not supported</h2>
+    <p>At the moment the service does not cover:</p>
+    <ul>
+      <li>customers who want to re-use their Patient Online (POL) verification</li>
+      <li>customers who want to use offline methods of verification, for example post office or health professional vouching of identity</li>
+    </ul>
+
+
+
+    <br><br>
+    <mark>
+Add links to: 
+Minimum standards for integration
+Onboarding process – what to expect
+EIS
+Assurance info
+Technical one-pager
+Contact us
+</mark>
+</p>
+
+
+{% endblock %}

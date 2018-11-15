@@ -1,0 +1,70 @@
+{% set title = 'Layout' %}
+{% set navigation = 'transactional' %}
+{% set navigationWidth = 'fluid' %}
+{% extends "includes/templates/styles.html"%}
+
+{% block header %}
+    <h1>NHS login - Onboarding information for partners</h1>
+    <p style="max-width: 100%" class="nhsuk-body-s"><span class="nhsuk-tag nhsuk-tag__development">BETA</span> This information is likely to change soon.</p>
+{% endblock %}
+
+{% block sidebar %}
+    {% include "includes/side-menu.html" %}
+{% endblock %}
+
+{% block content %}
+    
+    <h2>Service description</h2>
+    <h3>Introduction to NHS login</h3>
+    <p>NHS login is a new way for people to prove who they are online, so they can access health and care websites and apps securely and safely, without having to use face-to-face services. NHS login is a safe way to make sure you’re giving the right people access to your service without having to build or maintain your own digital identity check.</p>
+    
+    <h3>Public information about NHS login</h3>
+    <ul>
+      <li>NHS login: guidance for the general public</li>
+      <li>Video: how to set up an NHS login</li>
+    </ul>
+
+    <h3>How NHS login can help partners</h3>
+    <ul>
+        <li>NHS login lets your service check your users are who they say they are.</li>
+        <li>The service redirects the user’s browser to NHS login to register or sign-in.</li>
+    </ul>
+
+    <h3>How NHS login verifies a user’s identity</h3>
+    <p>When logging in for the first time, users will be asked to set up a single NHS login (username and password) using their email address and mobile phone. These login details can then be reused on all services using NHS login.</p>
+    <p>Users then have to prove their identity. To do this they:</p>
+    <ul>
+        <li>upload a copy of a photo ID document, such as a passport or driving license</li>
+        <li>upload a short video of themselves reading 4 randomly generated numbers out loud</li>
+    </ul>
+
+    <p>Proving users’ identities this way meets the published standard for identity checking in health and care services.</p>
+    <p>After the user has proved their identity, your service will be sent their NHS number, surname, and date of birth. You can also request other data items which the user must consent to sharing with your service, for example email address <mark>(what else?)</mark></p>
+
+    <p>The user can use the account they created with NHS login to:</p>
+
+    <ul>
+        <li>sign back in to your service at any time</li>
+        <li>access other health and care websites and apps that use NHS login</li>
+    </ul>
+
+    <p>Users have to have an NHS number registered in England to set up an NHS login (Wales and NI share the same NHS numbers but this service was only funded for development in England).</p>
+
+    <h3>The NHS login Information Standard</h3>
+    <p>NHS Digital has published the Identity Verification and Authentication Standard for Digital Health and Care Services. It describes how and why a person should prove who they are before they use a health or care website or app.</p>
+    <p>It's based on the government's Identity Proofing and Verification of an Individual good practice guide. All services that use our authentication and verification platform must meet NHS Digital's standard.</p>
+
+    <h3>Integrating your service with NHS login</h3>
+    <p>To integrate with NHS login you’ll need to complete <mark>xxx steps: - (engagement, explore, R&D, product development, assurance?)  more info needed</mark></p>
+
+    <mark>Link for features roadmap</mark></br>
+    <mark>You can read about each step in the NHS login onboarding guide (link to this info).</mark></br>
+    <mark>Clinical authorisation (tbc) – more info needed</mark></br>
+    <mark>Technical information – link to page</mark></br>
+    <mark>Support – link to page?</mark></br>
+    <mark>What are the main questions that suppliers ask so we can answer them in this description?</mark></br>
+    <br><br>
+</p>
+
+
+{% endblock %}

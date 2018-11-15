@@ -1,0 +1,32 @@
+{% set title = 'Layout' %}
+{% set navigation = 'transactional' %}
+{% set navigationWidth = 'fluid' %}
+{% extends "includes/templates/styles.html"%}
+
+{% block header %}
+    <h1>NHS login - Onboarding information for partners</h1>
+    <p style="max-width: 100%" class="nhsuk-body-s"><span class="nhsuk-tag nhsuk-tag__development">BETA</span> This information is likely to change soon.</p>
+{% endblock %}
+
+{% block sidebar %}
+    <!--<h2 class="nhsuk-heading-xs">Onboarding Information</h2>-->
+    <!--<ul class="nhsuk-list">
+        <li><a href="index">Introduction</a></li>
+        <li><a href="roadmap">Feature Roadmap</a></li>
+        <li><a href="service-overview">Service Overview</a></li>
+        <li><a href="onboarding-plan">Onboarding Plan</a></li>
+        <li><a href="login-contacts">NHS login contacts</a></li>
+        <li><a href="express-interest">Express Interest</a></li>
+        <li><a href="minimum-requirements">Minimum Requirements</a></li>
+        <li><a href="technical-overview">Technical Overview</a></li>
+        <li><a href="contracts">Contracts</a></li>
+    </ul>
+    -->
+
+    {% include "includes/side-menu.html" %}
+{% endblock %}
+
+{% block content %}
+    <h2>Minimum Standards</h2>
+    <p>We're still working on this bit</p>
+{% endblock %}

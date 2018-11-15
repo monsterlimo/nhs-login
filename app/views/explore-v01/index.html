@@ -1,0 +1,19 @@
+{% set title = 'Layout' %}
+{% set navigation = 'transactional' %}
+{% set navigationWidth = 'fluid' %}
+{% extends "includes/templates/styles.html"%}
+
+{% block header %}
+    <h1>NHS login - Onboarding information for partners</h1>
+    <p style="max-width: 100%" class="nhsuk-body-s"><span class="nhsuk-tag nhsuk-tag__development">BETA</span> This information is likely to change soon.</p>
+{% endblock %}
+
+{% block sidebar %}
+    {% include "includes/side-menu.html" %}
+{% endblock %}
+
+{% block content %}
+    <h2>Introduction</h2>
+    <p>This information is to help you decide if your organisation wants to integrate with the NHS login service.</p>
+    <p>Integration is a fairly lengthy process. It involves supplying us with detailed information about your organisation and customers. This service overview gives you an idea of whether it is right for you before going further.</p>
+{% endblock %}

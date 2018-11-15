@@ -1,0 +1,59 @@
+{% set title = 'Layout' %}
+{% set navigation = 'transactional' %}
+{% set navigationWidth = 'fluid' %}
+{% extends "includes/templates/styles.html"%}
+
+{% block header %}
+    <h1>NHS login - Onboarding information for partners</h1>
+    <p style="max-width: 100%" class="nhsuk-body-s"><span class="nhsuk-tag nhsuk-tag__development">BETA</span> This information is likely to change soon.</p>
+{% endblock %}
+
+{% block sidebar %}
+    <!--<h2 class="nhsuk-heading-xs">Onboarding Information</h2>-->
+    <!--<ul class="nhsuk-list">
+        <li><a href="index">Introduction</a></li>
+        <li><a href="roadmap">Feature Roadmap</a></li>
+        <li><a href="service-overview">Service Overview</a></li>
+        <li><a href="onboarding-plan">Onboarding Plan</a></li>
+        <li><a href="login-contacts">NHS login contacts</a></li>
+        <li><a href="express-interest">Express Interest</a></li>
+        <li><a href="minimum-requirements">Minimum Requirements</a></li>
+        <li><a href="technical-overview">Technical Overview</a></li>
+        <li><a href="contracts">Contracts</a></li>
+    </ul>
+    -->
+
+    {% include "includes/side-menu.html" %}
+{% endblock %}
+
+{% block content %}
+    <h2>NHS login roadmap</h2>
+
+    <p>Please note: As the service develops we are​ defining our roadmap based on research and data insights. The below features are planned, but might move around as we respond through our beta phase.</p>
+
+    <h3>October - December 2018</h3>
+    <ul>
+      <li>Ability for users to switch between desktop and mobile devices to assist ID checks</li>
+      <li>Linking to GP record for users who's GP system provide is TPP and Vision</li>
+      <li>Passwordless login for apps and devices that support biometric unlocking</li>
+      <li>Partial automation of ID checks</li>
+    </ul>
+
+    <h3>January - March 2019</h3>
+    <ul>
+      <li>Enable users to amend the phone number and email linked to their account</li>
+      <li>Offline vouching for services that</li>
+      <li>Consent to share additional personal data with services</li>
+      <li>Full automation of ID checks</li>
+    </ul>
+    
+    <h3>March onwards</h3>
+    <ul>
+      <li>Delegated access</li>
+      <li>Passwordless login for browser based services</li>
+    </ul>
+
+    </br></br>
+    <mark>do we add when this was last updated?</mark>
+
+{% endblock %}
